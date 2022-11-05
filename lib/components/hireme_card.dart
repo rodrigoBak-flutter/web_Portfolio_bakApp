@@ -26,8 +26,8 @@ class HireMeCard extends StatelessWidget {
               height: 80,
               width: 80,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+           const Padding(
+              padding:  EdgeInsets.symmetric(horizontal: kDefaultPadding),
               child: SizedBox(
                 height: 80,
                 child: VerticalDivider(),
@@ -36,13 +36,14 @@ class HireMeCard extends StatelessWidget {
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                // ignore: prefer_const_literals_to_create_immutables
                 children: [
-                  Text(
+                  const Text(
                     "Starting New Project?",
                     style: TextStyle(fontSize: 42, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: kDefaultPadding / 2),
-                  Text(
+                 const SizedBox(height: kDefaultPadding / 2),
+                const  Text(
                     "Get an estimate for the new project",
                     style: TextStyle(fontWeight: FontWeight.w200),
                   )

@@ -18,18 +18,18 @@ class ExperienceCard extends StatelessWidget {
       height: 240,
       width: 255,
       decoration: BoxDecoration(
-        color: Color(0xFFF7E8FF),
+        color: Color.fromARGB(255, 156, 167, 196),
         borderRadius: BorderRadius.circular(10),
       ),
       child: DecoratedBox(
         decoration: BoxDecoration(
-          color: Color(0xFFEDD2FC),
+          color: Color.fromARGB(255, 0, 140, 255),
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
               offset: Offset(0, 3),
               blurRadius: 6,
-              color: Color(0xFFA600FF).withOpacity(0.25),
+              color: Color.fromARGB(255, 29, 159, 234).withOpacity(0.25),
             ),
           ],
         ),
@@ -46,12 +46,12 @@ class ExperienceCard extends StatelessWidget {
                     foreground: Paint()
                       ..style = PaintingStyle.stroke
                       ..strokeWidth = 6
-                      ..color = Color(0xFFDFA3FF).withOpacity(0.5),
+                      ..color = Color.fromARGB(255, 0, 200, 255).withOpacity(0.5),
                     shadows: [
                       BoxShadow(
                         offset: Offset(0, 5),
                         blurRadius: 10,
-                        color: Color(0xFFA600FF).withOpacity(0.5),
+                        color: Color.fromARGB(255, 33, 211, 238).withOpacity(0.5),
                       ),
                     ],
                   ),
@@ -68,9 +68,9 @@ class ExperienceCard extends StatelessWidget {
             ),
             SizedBox(height: kDefaultPadding / 2),
             Text(
-              "Years of Experience",
+              "años de experiencia",
               style: TextStyle(
-                color: Color(0xFFA600FF),
+                color: Colors.white,
               ),
             )
           ],

@@ -26,7 +26,7 @@ class AboutSection extends StatelessWidget {
                         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mag aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                   ),
                 ),
-                ExperienceCard(numOfExp: "08"),
+                ExperienceCard(numOfExp: "5"),
                 Expanded(
                   child: AboutSectionText(
                     text:
@@ -41,13 +41,13 @@ class AboutSection extends StatelessWidget {
               children: [
                 MyOutlineButton(
                   imageSrc: "assets/images/hand.png",
-                  text: "Hire Me!",
+                  text: "¡Contratame!",
                   press: () {},
                 ),
                 SizedBox(width: kDefaultPadding * 1.5),
                 DefaultButton(
                   imageSrc: "assets/images/download.png",
-                  text: "Download CV",
+                  text: "Descargar currículum",
                   press: () {},
                 ),
               ],

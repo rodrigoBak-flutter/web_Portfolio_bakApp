@@ -23,8 +23,8 @@ class ContactSection extends StatelessWidget {
         children: [
           SizedBox(height: kDefaultPadding * 2.5),
           SectionTitle(
-            title: "Contact Me",
-            subTitle: "For Project inquiry and information",
+            title: "Contáctame",
+            subTitle: "Para consultas e información sobre proyectos",
             color: Color(0xFF07E24A),
           ),
           ContactBox()
@@ -61,19 +61,19 @@ class ContactBox extends StatelessWidget {
                 SocalCard(
                   color: Color(0xFFD9FFFC),
                   iconSrc: "assets/images/skype.png",
-                  name: 'TheFlutterWay',
+                  name: 'Skype',
                   press: () {},
                 ),
                 SocalCard(
                   color: Color(0xFFE4FFC7),
                   iconSrc: "assets/images/whatsapp.png",
-                  name: 'TheFlutterWay',
+                  name: 'Whatsapp',
                   press: () {},
                 ),
                 SocalCard(
                   color: Color(0xFFE8F0F9),
                   iconSrc: "assets/images/messanger.png",
-                  name: 'TheFlutterWay',
+                  name: 'Messanger',
                   press: () {},
                 ),
               ],
@@ -104,8 +104,8 @@ class ContactForm extends StatelessWidget {
             child: TextFormField(
               onChanged: (value) {},
               decoration: InputDecoration(
-                labelText: "Your Name",
-                hintText: "Enter Your Name",
+                labelText: "Nombre",
+                hintText: "Ingrese su nombre",
               ),
             ),
           ),
@@ -114,8 +114,8 @@ class ContactForm extends StatelessWidget {
             child: TextFormField(
               onChanged: (value) {},
               decoration: InputDecoration(
-                labelText: "Email Address",
-                hintText: "Enter your email address",
+                labelText: "Correo electronico",
+                hintText: "Ingrese su correo electronico",
               ),
             ),
           ),
@@ -124,8 +124,8 @@ class ContactForm extends StatelessWidget {
             child: TextFormField(
               onChanged: (value) {},
               decoration: InputDecoration(
-                labelText: "Project Type",
-                hintText: "Select Project Type",
+                labelText: "Tipo de proyecto",
+                hintText: "Indique el tipo de proyecto",
               ),
             ),
           ),
@@ -134,8 +134,8 @@ class ContactForm extends StatelessWidget {
             child: TextFormField(
               onChanged: (value) {},
               decoration: InputDecoration(
-                labelText: "Project Budget",
-                hintText: "Select Project Budget",
+                labelText: "Presupuesto del proyecto",
+                hintText: "Indique su presupuesto",
               ),
             ),
           ),
@@ -145,8 +145,8 @@ class ContactForm extends StatelessWidget {
             child: TextFormField(
               onChanged: (value) {},
               decoration: InputDecoration(
-                labelText: "Description",
-                hintText: "Write some description",
+                labelText: "Descripcion",
+                hintText: "Escriba algo que lo describa",
               ),
             ),
           ),
@@ -155,7 +155,7 @@ class ContactForm extends StatelessWidget {
             child: FittedBox(
               child: DefaultButton(
                 imageSrc: "assets/images/contact_icon.png",
-                text: "Contact Me!",
+                text: "Contáctame!",
                 press: () {},
               ),
             ),
