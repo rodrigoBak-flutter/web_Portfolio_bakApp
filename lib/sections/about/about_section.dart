@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:web_portfolio_perfil/components/default_button.dart';
-import 'package:web_portfolio_perfil/components/my_outline_button.dart';
+import 'package:web_portfolio_perfil/components/url_launcher.dart';
+
 import 'package:web_portfolio_perfil/constants.dart';
 
 import 'components/about_section_text.dart';
@@ -8,6 +9,7 @@ import 'components/about_text_with_sign.dart';
 import 'components/experience_card.dart';
 
 class AboutSection extends StatelessWidget {
+  final url = 'https://github.com/rodrigoBak-flutter';
   @override
   Widget build(BuildContext context) {
     return FittedBox(
@@ -23,32 +25,40 @@ class AboutSection extends StatelessWidget {
                 Expanded(
                   child: AboutSectionText(
                     text:
-                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mag aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                        "Me interesa trabajar en tecnología para colaborar en proyectos de alto impacto social, donde realmente pueda resolver las necesidades de las personas, aportando todo mi conocimiento en desarrollo, diseño y cumpliendo mi sueño de idear y crear servicios digitales en el mundo real.",
                   ),
                 ),
                 ExperienceCard(numOfExp: "5"),
+                /*
                 Expanded(
                   child: AboutSectionText(
                     text:
-                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mag aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                        "",
                   ),
                 ),
+                 */
               ],
             ),
             SizedBox(height: kDefaultPadding * 3),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                MyOutlineButton(
+                /*
+                  MyOutlineButton(
                   imageSrc: "assets/images/hand.png",
                   text: "¡Contratame!",
                   press: () {},
                 ),
-                SizedBox(width: kDefaultPadding * 1.5),
-                DefaultButton(
-                  imageSrc: "assets/images/download.png",
-                  text: "Descargar currículum",
-                  press: () {},
+                 */
+              const  SizedBox(width: kDefaultPadding * 1.5),
+                GestureDetector(
+                  child: DefaultButton(
+                    imageSrc: "assets/images/git.png",
+                    text: "Ir a mi GitHub",
+                    press: () {           
+                    },
+                  ),
+                  onTap: () => openURL(url),
                 ),
               ],
             ),

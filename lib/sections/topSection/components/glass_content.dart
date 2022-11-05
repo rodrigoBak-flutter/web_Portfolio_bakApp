@@ -46,7 +46,7 @@ class GlassContent extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Desarrollador Flutter",
+                  "Soy desarrollador Flutter",
                   style: Theme.of(context)
                       .textTheme
                       .headline5

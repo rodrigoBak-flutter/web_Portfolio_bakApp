@@ -14,14 +14,15 @@ class ServiceSection extends StatelessWidget {
         constraints: BoxConstraints(maxWidth: 1110),
         child: Column(
           children: [
-            SectionTitle(
+            const SectionTitle(
               color: Color(0xFFFF0000),
-              title: "Ofertas de servicios",
-              subTitle: "Mis arenas fuertes",
+              title: "Tecnologías",
+              subTitle: "Habilidades",
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: List.generate(
+                
                   services.length, (index) => ServiceCard(index: index)),
             )
           ],

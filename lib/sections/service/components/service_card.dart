@@ -20,14 +20,7 @@ class _ServiceCardState extends State<ServiceCard> {
   Duration duration = Duration(milliseconds: 200);
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {},
-      onHover: (value) {
-        setState(() {
-          isHover = value;
-        });
-      },
-      hoverColor: Colors.transparent,
+    return Container(   
       child: AnimatedContainer(
         duration: duration,
         margin: EdgeInsets.symmetric(vertical: kDefaultPadding * 2),
@@ -52,7 +45,7 @@ class _ServiceCardState extends State<ServiceCard> {
                 boxShadow: [
                   if (!isHover)
                     BoxShadow(
-                      offset: Offset(0, 20),
+                      offset: const Offset(0, 20),
                       blurRadius: 30,
                       color: Colors.black.withOpacity(0.1),
                     ),
@@ -60,7 +53,7 @@ class _ServiceCardState extends State<ServiceCard> {
               ),
               child: Image.asset(
                 services[widget.index].image,
-                fit: BoxFit.fill,
+                fit: BoxFit.contain,
               ),
             ),
             SizedBox(height: kDefaultPadding),
